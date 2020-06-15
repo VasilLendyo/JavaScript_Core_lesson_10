@@ -22,7 +22,7 @@ $(document).ready(
 						userAddress : $('#userAddress').val()
 					}),
 					contentType : "application/json",
-					url : "http://localhost:3000/userPost",
+					url : "/userPost",
 					success : function(data) {
 						console.log('success');
 						console.log(JSON.stringify(data));
@@ -36,7 +36,7 @@ $(document).ready(
 						$.ajax({
 							type : "GET",
 							contentType : "application/json",
-							url : "http://localhost:3000/userGet?userSurname="
+							url : "/userGet?userSurname="
 									+ $('#userSurname').val() + "&userName="
 									+ $('#userName').val() + "&userAge="
 									+ $('#userAge').val() + "&userAddress="
